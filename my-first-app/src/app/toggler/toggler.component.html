@@ -1,0 +1,9 @@
+<button class="btn btn-primary" (click)="onDisplayDetailsClick()">Display Details</button>
+<p *ngIf="showDetails">These are the details</p>
+<div 
+  *ngFor="let log of logs" 
+  [ngStyle]="{backgroundColor: log >= 5 ? 'blue' : 'transparent'}" 
+  >{{ log }}
+</div>
+
+
